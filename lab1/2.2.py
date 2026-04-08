@@ -1,0 +1,1 @@
+print([offset := [o := int(input("offset: ")), exec('assert o >= -15, "偏移不能小于-15！"')][0], "".join([chr(ord(char) + offset)][0] for char in input("text: "))][1])

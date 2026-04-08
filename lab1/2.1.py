@@ -1,0 +1,1 @@
+print(*(lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(lambda f: lambda l: l if (n := l[-1]) == 1 else f([*l, n // 2 if n % 2 == 0 else 3 * n + 1]))([n := int(input('n: ')), exec("assert n > 0, '输入必须大于0！'")][:1]))

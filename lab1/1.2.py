@@ -1,0 +1,2 @@
+a = 3; b = 6; c = 7 # 按照实验要求，我们必须像这样定义a,b,c三个变量
+_ = [print(*(t := [(math := __import__('math')).degrees(math.acos(((l := [a, b, c])[(i + 1) % 3]**2 + l[(i + 2) % 3]**2 - l[i]**2) / (2 * l[(i + 1) % 3] * l[(i + 2) % 3]))) for i in range(3)])), exec(f'assert math.isclose({'+'.join(map(repr, t))}, 180); """注意浮点数不应该用==比较，所以我们使用math.isclose"""')]
